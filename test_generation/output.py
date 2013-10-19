@@ -85,19 +85,19 @@ def test_generation(arr):
     def test(self):
         self.assertEqual(main(*arr), 'x')
     return test
-            
-arr = []
-arr = run_get_value("input.py")
-if arr == []:
-    raise Exception("wrong input")
-else:
-    test_arr = []
-    for x in product(*arr):
-        test_arr.append(x)
         
 if __name__ == "__main__":
-    for x in test_arr:
-        test_name = 'test_%s' % test_arr.index(x)
-        test = test_generation(x)
-        setattr(Test, test_name, test)
-    unittest.main()
+    
+    arr = []
+    arr = run_get_value("input.py")
+    if arr == []:
+        raise Exception("wrong input")
+    else:
+        test_arr = []
+        for x in product(*arr):
+            test_arr.append(x)
+        for x in test_arr:
+            test_name = 'test_%s' % test_arr.index(x)
+            test = test_generation(x)
+            setattr(Test, test_name, test)
+        unittest.main()
