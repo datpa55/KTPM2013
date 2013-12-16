@@ -1,0 +1,77 @@
+*** Settings ***
+Library		Selenium2Library
+
+*** Variables ***
+
+${BROWSER}	ff
+${HOST}		truongnha.com
+${DELAY}	0
+${VALID USER}	atpa
+${VALID PASSWD}	praptpa$842
+${LOGIN URL}	http://${HOST}/login/
+${WELCOME URL}	http://${HOST}/school/
+${SORT0 URL}	http://${HOST}/school/students/organize/1453/0
+${SORT1 URL}	http://${HOST}/school/students/organize/1453/1
+${SORT2 URL}	http://${HOST}/school/students/organize/1453/2
+
+
+*** Keywords ***
+Open Browser to Login Page
+        Close Browser
+        Set Selenium Timeout  10
+        Open Browser  ${LOGIN URL}  ${BROWSER}
+        Maximize Browser Window
+        Set Selenium Speed  ${DELAY} 
+
+Input Username 
+        Input Text	id_username  ${VALID USER} 
+
+Input Password
+        Input Text	id_password  ${VALID PASSWD}
+
+Click Login button
+        Click Button	login
+        
+Click Class button
+       Click Link	1453
+
+Click Quan ly danh sach lop
+	Click Element	student-list-menu
+
+Click Sap xep
+	Click Element	student-sort
+
+Display Sort page
+	Location Should Be	${SORT0 URL}
+
+Click Sap xep ABC
+	Click Element	sort-list-menu
+
+Click Ten-Ho-Ten dem
+	Click Element	sort_alphabet_1
+
+Display SortAlphabet1 page
+	Location Should Be	${SORT1 URL}
+
+Click Ten-Ten dem-Ho
+	Click Element	sort_alphabet_2
+
+Display SortAlphabet2 page
+	Location Should Be	${SORT2 URL}
+
+Select Student	[Arguments]	${idstudent}
+	Double Click Element	xpath=//ul[@id="sortableList"]/li[@id="${idstudent}"]
+
+Move up Student location	[Arguments]	${idstudent}
+	Press Key	xpath=//ul[@id="sortableList"]/li[@id="${idstudent}"]	\\38
+
+Move down Student location	[Arguments]	${idstudent}
+	Press Key	xpath=//ul[@id="sortableList"]/li[@id="${idstudent}"]	\\40
+
+Save sort
+	Click Button	save
+
+Cancel sort
+	Click Button	cancel_list_sorting
+
+

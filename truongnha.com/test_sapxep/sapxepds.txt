@@ -1,0 +1,49 @@
+*** Settings ***
+Resource	resource.txt
+
+*** Testcases ***
+Login
+	Open Browser to Login Page
+	Input Username
+	Input Password
+	Click Login button
+
+Sap xep theo Ten-Ho-Ten dem
+	Click Class button
+	Click Quan ly danh sach lop
+	Click Sap xep
+	Display Sort page
+	Click Sap xep ABC
+	Click Ten-Ho-Ten dem
+	Save sort
+	Display SortAlphabet1 page
+	Cancel sort
+
+Sap xep theo Ten-Ten dem-Ho
+	Click Quan ly danh sach lop
+	Click Sap xep
+	Display Sort page
+	Click Sap xep ABC
+	Click Ten-Ten dem-Ho
+	Save sort
+	Display SortAlphabet2 page
+	Cancel sort
+
+Sap xep voi keo tha xuong
+	Click Quan ly danh sach lop
+	Click Sap xep
+	Display Sort page
+	Select Student	27956
+	Move down Student location	27956
+	Move down Student location	27956
+	Save sort
+	Display Sort page
+	Cancel sort
+	
+Sap xep voi keo tha len
+	Click Quan ly danh sach lop
+	Click Sap xep
+	Select Student	27956
+	Move up Student location	27956
+	Save sort
+	Display Sort page

@@ -1,0 +1,96 @@
+﻿*** Settings ***
+
+Documentation  A resource file containing the demo app specific keywords and variables that create our own domain specific language. Also SeleniumLibrary itself is imported here so that tests only need to import this resource file.
+
+Library        Selenium2Library
+
+
+*** Variables ***
+
+${BROWSER}       ff
+${DELAY}         0
+${HOST}          truongnha.com
+${LOGIN URL}     http://${HOST}/login/
+${WELCOME URL}   http://${HOST}/school/
+${CLASS URL}	 http://${HOST}/school/viewClassDetail/1453
+${SUBJECT}		 http://${HOST}/school/subjectPerClass/1453
+${VALID USER}    atpa
+${VALID PASSWD}  praptpa$842
+${name}		     Âm nhạc
+${number_lesson}	2
+${heso}			 0.5
+${teacher}       Tran Huy Vu
+
+
+
+*** Keywords ***	
+
+Open login page
+    Open Browser  ${LOGIN URL}  ${BROWSER}
+    Set Selenium Speed  ${DELAY}    
+
+Go To Login Page
+    Go To  ${LOGIN URL}    
+
+Input Username  [Arguments]  ${username}
+    Input Text  id_username  ${username}
+
+Input Password  [Arguments]  ${password}
+    Input Text  id_password  ${password}
+
+Submit Credentials
+    Click Button  login
+
+Display WelcomPage
+    Location Should Be  ${WELCOME URL}
+	
+Go to Welcome Page
+    Go To  ${WELCOME URL}    
+
+Go to Class page
+	Go To  ${CLASS URL} 
+	
+Go to Subject page
+	Go to	${SUBJECT}
+
+Submit Sort
+	Click Button	sort
+
+Submit Sort_up
+	Click Element	id=naviButton-up
+
+Submit Sort_down
+	Click Element	id=naviButton-down	
+
+Submit Cancel_sort
+	Click Element	id=cancel
+Submit Guide_sort
+	Click Element	id=guide
+Submit Advance
+	Click Button	advanced
+		
+Insert Subject
+	Input Text	id_name	${name}
+
+Select TypeSubject
+	Select From List	xpath=//select[@id="id_type"] 
+	
+Insert NumberLesson	
+	Input Text	id_number_lesson	${number_lesson}
+	
+Insert Heso	
+	Input Text	id_hs	${heso}
+		
+Insert Teacher	
+	Input Text	teacher	${teacher}	
+	
+Select Primary
+	Select From List	xpath=//select[@id="id_primary"] ${primary}
+Select Comment
+	Select Checkbox	id_nx
+		
+Submit submit
+	Click  Submit  submit
+
+Display the Teachers Page
+    Location Should Be  ${CLASS URL}    

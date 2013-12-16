@@ -1,0 +1,33 @@
+*** Settings ***
+Documentation	A test suite with a single test for Sort Subject . This test has a workflow that is created using keywords from resource file
+
+Resource		resource.txt
+
+*** Test Cases ***
+
+Filter Subject
+	Open login page
+	Input Username	atpa
+	Input Password	praptpa$842
+	Submit Credentials
+	Display WelcomPage
+	Go to WelcomePage
+	Go to Class page
+	Go to Subject page
+	Submit Sort
+	Submit Sort_up
+	Submit Sort_down
+	Submit Cancel_sort
+	Submit Sort
+	Submit Guide_sort
+	Submit Advance
+	Insert Subject	
+	Select TypeSubject
+	Insert Heso	
+	Insert Teacher	
+	Select Primary
+	Select Comment
+	Click Submit
+	Submit submit
+	
+	

@@ -1,0 +1,80 @@
+*** Settings ***
+
+Library        Selenium2Library
+
+*** Variables ***
+
+${BROWER}			ff
+${DELAY}			0
+${HOST}				truongnha.com
+${LOGIN URL}		http://${HOST}/login/
+${WELCOME URL}		http://${HOST}/school/
+${SUBJECT URL}		http://${HOST}/school/subjectPerClass/
+${SUBJECT DETAIL}	http://${HOST}/school/viewSubjectDetail/
+${SUBJECT AGENDA}	http://${HOST}/school/subjectAgenda/
+${VALID USER}		atpa
+${VALID PASSWORD}	praptpa$842
+${CLASS ID} 		1453
+${SUBJECT ID}		20507
+${MESSAGE}			Bạn có chắc chắn muốn xóa?
+*** Keywords ***
+
+Open Browser To Testing
+	Open Browser 	${LOGIN URL}	${BROWER}
+	Set Selenium Speed	${DELAY}
+	
+Login Page
+	Go To	${LOGIN URL}
+	Input Text  id_username  ${VALID USER}
+	Input Text  id_password  ${VALID PASSWORD}
+	Click Button  login
+	Location Should Be  ${WELCOME URL}
+	Go To  ${WELCOME URL}
+	
+Go to subjectClass
+	Go To	${SUBJECT URL}/${CLASS ID}
+	Location Should Be	${SUBJECT URL}/1453
+	
+Choose Subject To Update Info
+	Go To	${SUBJECT DETAIL}/${SUBJECT ID}
+
+Input Subject Name	[Arguments]	${subjectName}
+	Input Text	id_name	${subjectName}
+
+Input Subject He So	[Arguments]	${hsNumber}
+	Input Text	id_hs	${hsNumber}
+
+Checkbox Should Be Selected
+	Select Checkbox  id_nx
+	
+Unselect Checkbox
+	Unselect Checkbox id_nx
+	
+Input Number Lesson	[Arguments]	${numberLesson}
+	Input Text	id_number_lesson	${numberLesson}
+
+Select Teach For Subject	[Arguments]	${teacher}
+	Select From List	xpath=//select[@id='id_teacher_id']	${teacher}
+
+Submit Form
+	Click Element	xpath=//input[@value='Lưu']
+
+Check NotExits Class
+	Page Should Not Contain Element	xpath=//ul[@class='errorlist']
+	
+Check Exits Class
+	Page Should Contain Element	xpath=//ul[@class='errorlist']
+
+Go To Agenda Page
+	Go To 	${SUBJECT AGENDA}/${SUBJECT ID}
+
+Delete A Line
+	Click Element	xpath=//button[@class='btn delete']
+
+Confirm Actions
+    Click Button  OK
+    ${msg}=  Confirm Action
+    Should Be Equal  ${msg}  ${MESSAGE}
+	
+Logout Page
+	Click Element	logout

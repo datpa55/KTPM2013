@@ -1,0 +1,46 @@
+*** Settings ***
+
+Resource		resource.txt
+
+*** TestCase ***
+Test Subject Info
+	Open Browser To Testing
+	
+
+	
+Test Valid Value Advanced Subject
+	Login Page
+	Choose Subject To Update Info
+	Input Subject Name	Toán
+	Input Subject He So	1.0
+	Checkbox Should Be Selected
+	Input Number Lesson	5
+	Select Teach For Subject	Doãn Bảo Long
+	Submit Form
+	Check NotExits Class
+	Logout Page
+
+Test Invalid Value Advance Subject
+	Login Page
+	Choose Subject To Update Info
+	Input Subject Name	Toán
+	Input Subject He So	11.0
+	Checkbox Should Be Selected
+	Input Number Lesson	10
+	Select Teach For Subject	Doãn Bảo Long
+	Submit Form
+	Check Exits Class
+	Logout Page
+
+Test Delete A Agenda
+	Login Page
+	Go To Agenda Page
+	Delete A Line
+	Confirm Actions
+	Logout Page
+	
+	
+Open Page To Login
+	Login Page
+	Go to subjectClass
+	[Teardown]  Close Browser
