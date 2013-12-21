@@ -3,12 +3,8 @@
 Resource		resource.txt
 
 *** TestCase ***
-Test Subject Info
-	Open Browser To Testing
-	
-
-	
 Test Valid Value Advanced Subject
+	Open Browser To Testing
 	Login Page
 	Choose Subject To Update Info
 	Input Subject Name	Toán
@@ -36,11 +32,16 @@ Test Delete A Agenda
 	Login Page
 	Go To Agenda Page
 	Delete A Line
-	Confirm Actions
+	Confirm Action
 	Logout Page
 	
-	
-Open Page To Login
+Test Uses System Of Website
 	Login Page
-	Go to subjectClass
+	Go To Agenda Page
+	Choose Program System
+	Choose Yes
+	Logout Page
+
+
 	[Teardown]  Close Browser
+	

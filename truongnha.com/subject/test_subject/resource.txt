@@ -5,7 +5,7 @@ Library        Selenium2Library
 *** Variables ***
 
 ${BROWER}			ff
-${DELAY}			0
+${DELAY}			1
 ${HOST}				truongnha.com
 ${LOGIN URL}		http://${HOST}/login/
 ${WELCOME URL}		http://${HOST}/school/
@@ -16,7 +16,6 @@ ${VALID USER}		atpa
 ${VALID PASSWORD}	praptpa$842
 ${CLASS ID} 		1453
 ${SUBJECT ID}		20507
-${MESSAGE}			Bạn có chắc chắn muốn xóa?
 *** Keywords ***
 
 Open Browser To Testing
@@ -70,11 +69,12 @@ Go To Agenda Page
 
 Delete A Line
 	Click Element	xpath=//button[@class='btn delete']
+	
+Choose Program System
+	Click Element	xpath=/html/body/section[1]/div[1]/div[1]/a[3]
 
-Confirm Actions
-    Click Button  OK
-    ${msg}=  Confirm Action
-    Should Be Equal  ${msg}  ${MESSAGE}
+Choose Yes
+	Click Element	xpath=//button[@id='submit_button']
 	
 Logout Page
 	Click Element	logout
