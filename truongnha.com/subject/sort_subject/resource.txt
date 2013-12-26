@@ -8,7 +8,7 @@ Library        Selenium2Library
 *** Variables ***
 
 ${BROWSER}       ff
-${DELAY}         0
+${DELAY}         1
 ${HOST}          truongnha.com
 ${LOGIN URL}     http://${HOST}/login/
 ${WELCOME URL}   http://${HOST}/school/
@@ -16,17 +16,14 @@ ${CLASS URL}	 http://${HOST}/school/viewClassDetail/1453
 ${SUBJECT}		 http://${HOST}/school/subjectPerClass/1453
 ${VALID USER}    atpa
 ${VALID PASSWD}  praptpa$842
-${name}		     Âm nhạc
-${number_lesson}	2
-${heso}			 0.5
-${teacher}       Tran Huy Vu
-
 
 
 *** Keywords ***	
-
-Open login page
+Open Browser to Login Page
+	Close Browser
+	Set Selenium Timeout	10
     Open Browser  ${LOGIN URL}  ${BROWSER}
+	Maximize Browser Window
     Set Selenium Speed  ${DELAY}    
 
 Go To Login Page
@@ -52,36 +49,53 @@ Go to Class page
 	
 Go to Subject page
 	Go to	${SUBJECT}
+Display Subject Page
+    Location Should Be	${SUBJECT}
 
+Select Class
+	Select From List	xpath=//select[@name="class"]
 Submit Sort
 	Click Button	sort
 
-Submit Sort_up
+Click Sort_up
 	Click Element	id=naviButton-up
 
-Submit Sort_down
+Click Sort_down
 	Click Element	id=naviButton-down	
+Save Save_sort
+	Click Button	sort
 
-Submit Cancel_sort
+Cancel_sort
 	Click Element	id=cancel
-Submit Guide_sort
+	
+Check NoExits Class Delete
+	Page Should Not Contain Element	xpath=//ul[@class='btn no-text btn-small deletion']
+
+Check Exits Class Delete
+	Page Should Contain Element	xpath=//ul[@class='btn no-text btn-small deletion']
+
+Delete A Subject
+	Click Element	xpath=//button[@class='btn no-text btn-small deletion']
+
+
+Click Guide_sort
 	Click Element	id=guide
-Submit Advance
+Click Advance
 	Click Button	advanced
 		
-Insert Subject
-	Input Text	id_name	${name}
+Insert Subject	[Arguments]	${subject_name}
+	Input Text	id_name	${subject_name}
 
 Select TypeSubject
 	Select From List	xpath=//select[@id="id_type"] 
 	
-Insert NumberLesson	
+Insert NumberLesson	[Arguments]	${number_lesson}
 	Input Text	id_number_lesson	${number_lesson}
 	
-Insert Heso	
+Insert Heso	[Arguments]	${heso}
 	Input Text	id_hs	${heso}
 		
-Insert Teacher	
+Insert Teacher	[Arguments]	${teacher}
 	Input Text	teacher	${teacher}	
 	
 Select Primary
@@ -92,5 +106,4 @@ Select Comment
 Submit submit
 	Click  Submit  submit
 
-Display the Teachers Page
-    Location Should Be  ${CLASS URL}    
+    

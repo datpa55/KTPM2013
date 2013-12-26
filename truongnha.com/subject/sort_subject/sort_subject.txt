@@ -5,29 +5,55 @@ Resource		resource.txt
 
 *** Test Cases ***
 
-Filter Subject
-	Open login page
+Login
+	Open Browser to Login Page
 	Input Username	atpa
 	Input Password	praptpa$842
 	Submit Credentials
-	Display WelcomPage
 	Go to WelcomePage
+	Display WelcomPage
+
+Valid Sort Subject
 	Go to Class page
 	Go to Subject page
 	Submit Sort
-	Submit Sort_up
-	Submit Sort_down
-	Submit Cancel_sort
+	Click Sort_up
+	Click Sort_down
+	Save Save_sort
 	Submit Sort
-	Submit Guide_sort
-	Submit Advance
-	Insert Subject	
+	
+Cancelsort	
+	Save Save_sort
+	Cancel_sort
+
+NoDelete Van Toan
+	Check NoExits Class Delete
+
+Delete Subject
+	Submit Sort
+	Check Exits Class Delete
+	Delete A Subject
+	
+Add Valid Subject
+	Insert Subject	Hóa h?c
 	Select TypeSubject
-	Insert Heso	
-	Insert Teacher	
+	Insert Heso	1.5
+	Insert Teacher	Doãn B?o Long
 	Select Primary
 	Select Comment
 	Click Submit
-	Submit submit
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
