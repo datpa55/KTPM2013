@@ -1,4 +1,4 @@
-*** Settings ***
+﻿*** Settings ***
 Documentation	A test suite with a single test for Sort Subject . This test has a workflow that is created using keywords from resource file
 
 Resource		resource.txt
@@ -12,7 +12,7 @@ Login
 	Submit Credentials
 	Go to WelcomePage
 	Display WelcomPage
-
+	
 Valid Sort Subject
 	Go to Class page
 	Go to Subject page
@@ -21,31 +21,30 @@ Valid Sort Subject
 	Click Sort_down
 	Save Save_sort
 	Submit Sort
-	
-Cancelsort	
+
+Cancelsort
+	Go to Class page
+	Go to Subject page
+	Submit Sort
 	Save Save_sort
 	Cancel_sort
-
-NoDelete Van Toan
-	Check NoExits Class Delete
-
+	
 Delete Subject
 	Submit Sort
 	Check Exits Class Delete
 	Delete A Subject
 	
 Add Valid Subject
-	Insert Subject	H�a h?c
-	Select TypeSubject
-	Insert Heso	1.5
-	Insert Teacher	Do�n B?o Long
-	Select Primary
-	Select Comment
-	Click Submit
-	
-	
-
-	
+	Go to Class page
+	Go to Subject page
+	Submit Sort
+	Display Advance
+	Insert Subject	Địa lí
+	Select TypeSubject	Địa lí 
+	Insert NumberLesson	3
+	Insert Heso	2.0
+	Submit Add Subject
+	[Teardown]  Close Browser
 	
 	
 	
