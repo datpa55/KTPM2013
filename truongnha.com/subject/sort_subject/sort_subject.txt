@@ -13,7 +13,7 @@ Login
 	Go to WelcomePage
 	Display WelcomPage
 	
-Valid Sort Subject
+Sort Subject
 	Go to Class page
 	Go to Subject page
 	Submit Sort
@@ -22,7 +22,7 @@ Valid Sort Subject
 	Save Save_sort
 	Submit Sort
 
-Cancelsort
+Cancel sort
 	Go to Class page
 	Go to Subject page
 	Submit Sort
@@ -30,21 +30,24 @@ Cancelsort
 	Cancel_sort
 	
 Delete Subject
+	Go to Class page
+	Go to Subject page
 	Submit Sort
 	Check Exits Class Delete
-	Delete A Subject
+	Delete A Subject	20520
 	
-Add Valid Subject
+Add Subject
 	Go to Class page
 	Go to Subject page
 	Submit Sort
 	Display Advance
 	Insert Subject	Địa lí
 	Select TypeSubject	Địa lí 
+	Insert Teacher	Doãn Bảo Long
 	Insert NumberLesson	3
 	Insert Heso	2.0
 	Submit Add Subject
-	[Teardown]  Close Browser
+
 	
 	
 	

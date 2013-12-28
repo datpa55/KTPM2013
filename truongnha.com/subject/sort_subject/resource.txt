@@ -66,17 +66,16 @@ Save Save_sort
 	Click Button	sort
 
 Cancel_sort
-	Click Button	id=cancel
+	Click Button	cancel
 	
 Check NoExits Class Delete
 	Page Should Not Contain Element	xpath=//ul[@class='btn no-text btn-small deletion']
 
 Check Exits Class Delete
-	Page Should Contain Element	xpath=//ul[@class='btn no-text btn-small deletion']
+	Page Should Contain Element	xpath=//button[@class='btn no-text btn-small deletion']
 
-Delete A Subject
-	Click Element	xpath=//button[@class='btn no-text btn-small deletion']
-
+Delete A Subject	[Arguments]	${idsubject}
+	Click Element	xpath=//tr[@id=${idsubject}]/button[@class='btn no-text btn-small deletion']
 
 Click Guide_sort
 	Click Element	id=guide
@@ -97,7 +96,7 @@ Insert Heso	[Arguments]	${heso}
 	Input Text	id_hs	${heso}
 		
 Insert Teacher	[Arguments]	${teacher}
-	Input Text	id_teacher_id	${teacher}	
+	Input Text	teacher_id	${teacher}	
 	
 Select Primary	[Arguments]	${primary}
 	Select From List	xpath=//select[@id="id_primary"] ${primary}

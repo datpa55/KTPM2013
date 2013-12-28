@@ -1,0 +1,21 @@
+*** Settings ***
+Documentation	A test suite with a single test for Sort Subject . This test has a workflow that is created using keywords from resource file
+
+Resource		resource.txt
+
+*** Test Cases ***
+
+Login
+	Open Browser to Login Page
+	Input Username	atpa
+	Input Password	praptpa$842
+	Submit Credentials
+	Go to WelcomePage
+	Display WelcomPage
+	
+Delete Subject
+	Go to Class page
+	Go to Subject page
+	Submit Sort
+	Check Exits Class Delete
+	Delete A Subject	23251

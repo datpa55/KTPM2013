@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20131227 11:58:23.573" generator="Robot 2.8.1 (Python 2.7.5 on win32)">
+<robot generated="20131228 22:28:32.397" generator="Robot 2.8.1 (Python 2.7.5 on win32)">
 <suite source="C:\Users\AnhLum\Documents\GitHub\KTPM2013\truongnha.com\subject\sort_subject\sort_subject.txt" id="s1" name="Sort Subject">
 <test id="s1-t1" name="Login">
 <kw type="kw" name="resource.Open Browser to Login Page">
@@ -10,14 +10,14 @@
 <doc>Closes the current browser.</doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20131227 11:58:23.817" starttime="20131227 11:58:23.817"></status>
+<status status="PASS" endtime="20131228 22:28:32.680" starttime="20131228 22:28:32.680"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Set Selenium Timeout">
 <doc>Sets the timeout in seconds used by various keywords.</doc>
 <arguments>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20131227 11:58:23.818" starttime="20131227 11:58:23.817"></status>
+<status status="PASS" endtime="20131228 22:28:32.680" starttime="20131228 22:28:32.680"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Open Browser">
 <doc>Opens a new browser instance to given URL.</doc>
@@ -25,23 +25,23 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20131227 11:58:23.818" level="INFO">Opening browser 'ff' to base url 'http://truongnha.com/login/'</msg>
-<status status="PASS" endtime="20131227 11:58:52.328" starttime="20131227 11:58:23.818"></status>
+<msg timestamp="20131228 22:28:32.681" level="INFO">Opening browser 'ff' to base url 'http://truongnha.com/login/'</msg>
+<status status="PASS" endtime="20131228 22:28:45.629" starttime="20131228 22:28:32.681"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Maximize Browser Window">
 <doc>Maximizes current browser window.</doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20131227 11:58:52.674" starttime="20131227 11:58:52.328"></status>
+<status status="PASS" endtime="20131228 22:28:46.015" starttime="20131228 22:28:45.629"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Set Selenium Speed">
 <doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" endtime="20131227 11:58:52.675" starttime="20131227 11:58:52.674"></status>
+<status status="PASS" endtime="20131228 22:28:46.016" starttime="20131228 22:28:46.015"></status>
 </kw>
-<status status="PASS" endtime="20131227 11:58:52.675" starttime="20131227 11:58:23.816"></status>
+<status status="PASS" endtime="20131228 22:28:46.016" starttime="20131228 22:28:32.679"></status>
 </kw>
 <kw type="kw" name="resource.Input Username">
 <doc></doc>
@@ -54,10 +54,10 @@
 <arg>id_username</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20131227 11:58:52.677" level="INFO">Typing text 'atpa' into text field 'id_username'</msg>
-<status status="PASS" endtime="20131227 11:58:55.824" starttime="20131227 11:58:52.677"></status>
+<msg timestamp="20131228 22:28:46.019" level="INFO">Typing text 'atpa' into text field 'id_username'</msg>
+<status status="PASS" endtime="20131228 22:28:49.163" starttime="20131228 22:28:46.019"></status>
 </kw>
-<status status="PASS" endtime="20131227 11:58:55.824" starttime="20131227 11:58:52.676"></status>
+<status status="PASS" endtime="20131228 22:28:49.163" starttime="20131228 22:28:46.018"></status>
 </kw>
 <kw type="kw" name="resource.Input Password">
 <doc></doc>
@@ -70,10 +70,10 @@
 <arg>id_password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20131227 11:58:55.828" level="INFO">Typing text 'praptpa$842' into text field 'id_password'</msg>
-<status status="PASS" endtime="20131227 11:58:58.955" starttime="20131227 11:58:55.827"></status>
+<msg timestamp="20131228 22:28:49.168" level="INFO">Typing text 'praptpa$842' into text field 'id_password'</msg>
+<status status="PASS" endtime="20131228 22:28:52.334" starttime="20131228 22:28:49.168"></status>
 </kw>
-<status status="PASS" endtime="20131227 11:58:58.955" starttime="20131227 11:58:55.825"></status>
+<status status="PASS" endtime="20131228 22:28:52.334" starttime="20131228 22:28:49.167"></status>
 </kw>
 <kw type="kw" name="resource.Submit Credentials">
 <doc></doc>
@@ -84,10 +84,10 @@
 <arguments>
 <arg>login</arg>
 </arguments>
-<msg timestamp="20131227 11:58:58.957" level="INFO">Clicking button 'login'.</msg>
-<status status="PASS" endtime="20131227 11:59:04.498" starttime="20131227 11:58:58.956"></status>
+<msg timestamp="20131228 22:28:52.337" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20131228 22:28:58.406" starttime="20131228 22:28:52.337"></status>
 </kw>
-<status status="PASS" endtime="20131227 11:59:04.498" starttime="20131227 11:58:58.956"></status>
+<status status="PASS" endtime="20131228 22:28:58.406" starttime="20131228 22:28:52.336"></status>
 </kw>
 <kw type="kw" name="resource.Go to Welcome Page">
 <doc></doc>
@@ -98,10 +98,10 @@
 <arguments>
 <arg>${WELCOME URL}</arg>
 </arguments>
-<msg timestamp="20131227 11:59:04.502" level="INFO">Opening url 'http://truongnha.com/school/'</msg>
-<status status="PASS" endtime="20131227 11:59:06.638" starttime="20131227 11:59:04.502"></status>
+<msg timestamp="20131228 22:28:58.413" level="INFO">Opening url 'http://truongnha.com/school/'</msg>
+<status status="PASS" endtime="20131228 22:29:01.136" starttime="20131228 22:28:58.412"></status>
 </kw>
-<status status="PASS" endtime="20131227 11:59:06.639" starttime="20131227 11:59:04.500"></status>
+<status status="PASS" endtime="20131228 22:29:01.136" starttime="20131228 22:28:58.410"></status>
 </kw>
 <kw type="kw" name="resource.Display WelcomPage">
 <doc></doc>
@@ -112,17 +112,17 @@
 <arguments>
 <arg>${WELCOME URL}</arg>
 </arguments>
-<msg timestamp="20131227 11:59:07.654" level="INFO">Current location is 'http://truongnha.com/school/'.</msg>
-<status status="PASS" endtime="20131227 11:59:07.654" starttime="20131227 11:59:06.640"></status>
+<msg timestamp="20131228 22:29:02.157" level="INFO">Current location is 'http://truongnha.com/school/'.</msg>
+<status status="PASS" endtime="20131228 22:29:02.157" starttime="20131228 22:29:01.140"></status>
 </kw>
-<status status="PASS" endtime="20131227 11:59:07.654" starttime="20131227 11:59:06.639"></status>
+<status status="PASS" endtime="20131228 22:29:02.157" starttime="20131228 22:29:01.138"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="PASS" endtime="20131227 11:59:07.655" critical="yes" starttime="20131227 11:58:23.814"></status>
+<status status="PASS" endtime="20131228 22:29:02.159" critical="yes" starttime="20131228 22:28:32.677"></status>
 </test>
-<test id="s1-t2" name="Cancelsort">
+<test id="s1-t2" name="Valid Sort Subject">
 <kw type="kw" name="resource.Go to Class page">
 <doc></doc>
 <arguments>
@@ -132,10 +132,10 @@
 <arguments>
 <arg>${CLASS URL}</arg>
 </arguments>
-<msg timestamp="20131227 11:59:07.664" level="INFO">Opening url 'http://truongnha.com/school/viewClassDetail/1453'</msg>
-<status status="PASS" endtime="20131227 11:59:12.396" starttime="20131227 11:59:07.664"></status>
+<msg timestamp="20131228 22:29:02.167" level="INFO">Opening url 'http://truongnha.com/school/viewClassDetail/1453'</msg>
+<status status="PASS" endtime="20131228 22:29:05.759" starttime="20131228 22:29:02.166"></status>
 </kw>
-<status status="PASS" endtime="20131227 11:59:12.396" starttime="20131227 11:59:07.662"></status>
+<status status="PASS" endtime="20131228 22:29:05.759" starttime="20131228 22:29:02.165"></status>
 </kw>
 <kw type="kw" name="resource.Go to Subject page">
 <doc></doc>
@@ -146,10 +146,10 @@
 <arguments>
 <arg>${SUBJECT}</arg>
 </arguments>
-<msg timestamp="20131227 11:59:12.400" level="INFO">Opening url 'http://truongnha.com/school/subjectPerClass/1453'</msg>
-<status status="PASS" endtime="20131227 11:59:16.108" starttime="20131227 11:59:12.399"></status>
+<msg timestamp="20131228 22:29:05.763" level="INFO">Opening url 'http://truongnha.com/school/subjectPerClass/1453'</msg>
+<status status="PASS" endtime="20131228 22:29:08.497" starttime="20131228 22:29:05.762"></status>
 </kw>
-<status status="PASS" endtime="20131227 11:59:16.108" starttime="20131227 11:59:12.398"></status>
+<status status="PASS" endtime="20131228 22:29:08.497" starttime="20131228 22:29:05.761"></status>
 </kw>
 <kw type="kw" name="resource.Submit Sort">
 <doc></doc>
@@ -160,10 +160,38 @@
 <arguments>
 <arg>sort</arg>
 </arguments>
-<msg timestamp="20131227 11:59:16.111" level="INFO">Clicking button 'sort'.</msg>
-<status status="PASS" endtime="20131227 11:59:19.263" starttime="20131227 11:59:16.110"></status>
+<msg timestamp="20131228 22:29:08.500" level="INFO">Clicking button 'sort'.</msg>
+<status status="PASS" endtime="20131228 22:29:11.657" starttime="20131228 22:29:08.499"></status>
 </kw>
-<status status="PASS" endtime="20131227 11:59:19.263" starttime="20131227 11:59:16.110"></status>
+<status status="PASS" endtime="20131228 22:29:11.657" starttime="20131228 22:29:08.498"></status>
+</kw>
+<kw type="kw" name="resource.Click Sort_up">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=naviButton-up</arg>
+</arguments>
+<msg timestamp="20131228 22:29:11.661" level="INFO">Clicking element 'id=naviButton-up'.</msg>
+<status status="PASS" endtime="20131228 22:29:13.819" starttime="20131228 22:29:11.661"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:29:13.820" starttime="20131228 22:29:11.659"></status>
+</kw>
+<kw type="kw" name="resource.Click Sort_down">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=naviButton-down</arg>
+</arguments>
+<msg timestamp="20131228 22:29:13.824" level="INFO">Clicking element 'id=naviButton-down'.</msg>
+<status status="PASS" endtime="20131228 22:29:15.978" starttime="20131228 22:29:13.823"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:29:15.978" starttime="20131228 22:29:13.821"></status>
 </kw>
 <kw type="kw" name="resource.Save Save_sort">
 <doc></doc>
@@ -174,10 +202,86 @@
 <arguments>
 <arg>sort</arg>
 </arguments>
-<msg timestamp="20131227 11:59:19.266" level="INFO">Clicking button 'sort'.</msg>
-<status status="PASS" endtime="20131227 11:59:22.383" starttime="20131227 11:59:19.266"></status>
+<msg timestamp="20131228 22:29:15.982" level="INFO">Clicking button 'sort'.</msg>
+<status status="PASS" endtime="20131228 22:29:19.150" starttime="20131228 22:29:15.981"></status>
 </kw>
-<status status="PASS" endtime="20131227 11:59:22.383" starttime="20131227 11:59:19.265"></status>
+<status status="PASS" endtime="20131228 22:29:19.150" starttime="20131228 22:29:15.980"></status>
+</kw>
+<kw type="kw" name="resource.Submit Sort">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>sort</arg>
+</arguments>
+<msg timestamp="20131228 22:29:19.153" level="INFO">Clicking button 'sort'.</msg>
+<status status="PASS" endtime="20131228 22:29:22.274" starttime="20131228 22:29:19.153"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:29:22.274" starttime="20131228 22:29:19.151"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20131228 22:29:22.275" critical="yes" starttime="20131228 22:29:02.163"></status>
+</test>
+<test id="s1-t3" name="Cancelsort">
+<kw type="kw" name="resource.Go to Class page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${CLASS URL}</arg>
+</arguments>
+<msg timestamp="20131228 22:29:22.282" level="INFO">Opening url 'http://truongnha.com/school/viewClassDetail/1453'</msg>
+<status status="PASS" endtime="20131228 22:29:25.184" starttime="20131228 22:29:22.282"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:29:25.184" starttime="20131228 22:29:22.281"></status>
+</kw>
+<kw type="kw" name="resource.Go to Subject page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${SUBJECT}</arg>
+</arguments>
+<msg timestamp="20131228 22:29:25.186" level="INFO">Opening url 'http://truongnha.com/school/subjectPerClass/1453'</msg>
+<status status="PASS" endtime="20131228 22:29:28.361" starttime="20131228 22:29:25.185"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:29:28.361" starttime="20131228 22:29:25.185"></status>
+</kw>
+<kw type="kw" name="resource.Submit Sort">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>sort</arg>
+</arguments>
+<msg timestamp="20131228 22:29:28.365" level="INFO">Clicking button 'sort'.</msg>
+<status status="PASS" endtime="20131228 22:29:31.519" starttime="20131228 22:29:28.365"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:29:31.519" starttime="20131228 22:29:28.363"></status>
+</kw>
+<kw type="kw" name="resource.Save Save_sort">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>sort</arg>
+</arguments>
+<msg timestamp="20131228 22:29:31.521" level="INFO">Clicking button 'sort'.</msg>
+<status status="PASS" endtime="20131228 22:29:34.639" starttime="20131228 22:29:31.521"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:29:34.639" starttime="20131228 22:29:31.520"></status>
 </kw>
 <kw type="kw" name="resource.Cancel_sort">
 <doc></doc>
@@ -186,40 +290,253 @@
 <kw type="kw" name="Selenium2Library.Click Button">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
-<arg>id=cancel</arg>
+<arg>cancel</arg>
 </arguments>
-<msg timestamp="20131227 11:59:22.385" level="INFO">Clicking button 'id=cancel'.</msg>
+<msg timestamp="20131228 22:29:34.641" level="INFO">Clicking button 'cancel'.</msg>
 <kw type="kw" name="Selenium2Library.Capture Page Screenshot">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
 <arguments>
 </arguments>
-<msg timestamp="20131227 11:59:25.710" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20131227 11:59:25.710" starttime="20131227 11:59:24.439"></status>
+<msg timestamp="20131228 22:29:38.974" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20131228 22:29:38.975" starttime="20131228 22:29:37.696"></status>
 </kw>
-<msg timestamp="20131227 11:59:25.714" level="FAIL">ValueError: Element locator 'id=cancel' did not match any elements.</msg>
-<status status="FAIL" endtime="20131227 11:59:25.714" starttime="20131227 11:59:22.384"></status>
+<msg timestamp="20131228 22:29:38.978" level="FAIL">ValueError: Element locator 'cancel' did not match any elements.</msg>
+<status status="FAIL" endtime="20131228 22:29:38.979" starttime="20131228 22:29:34.640"></status>
 </kw>
-<status status="FAIL" endtime="20131227 11:59:25.714" starttime="20131227 11:59:22.384"></status>
+<status status="FAIL" endtime="20131228 22:29:38.979" starttime="20131228 22:29:34.640"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="FAIL" endtime="20131227 11:59:25.715" critical="yes" starttime="20131227 11:59:07.659">ValueError: Element locator 'id=cancel' did not match any elements.</status>
+<status status="FAIL" endtime="20131228 22:29:38.980" critical="yes" starttime="20131228 22:29:22.279">ValueError: Element locator 'cancel' did not match any elements.</status>
+</test>
+<test id="s1-t4" name="Delete Subject">
+<kw type="kw" name="resource.Go to Class page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${CLASS URL}</arg>
+</arguments>
+<msg timestamp="20131228 22:29:38.985" level="INFO">Opening url 'http://truongnha.com/school/viewClassDetail/1453'</msg>
+<status status="PASS" endtime="20131228 22:29:42.207" starttime="20131228 22:29:38.984"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:29:42.207" starttime="20131228 22:29:38.983"></status>
+</kw>
+<kw type="kw" name="resource.Go to Subject page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${SUBJECT}</arg>
+</arguments>
+<msg timestamp="20131228 22:29:42.209" level="INFO">Opening url 'http://truongnha.com/school/subjectPerClass/1453'</msg>
+<status status="PASS" endtime="20131228 22:29:45.096" starttime="20131228 22:29:42.209"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:29:45.096" starttime="20131228 22:29:42.208"></status>
+</kw>
+<kw type="kw" name="resource.Submit Sort">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>sort</arg>
+</arguments>
+<msg timestamp="20131228 22:29:45.098" level="INFO">Clicking button 'sort'.</msg>
+<status status="PASS" endtime="20131228 22:29:48.236" starttime="20131228 22:29:45.097"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:29:48.236" starttime="20131228 22:29:45.097"></status>
+</kw>
+<kw type="kw" name="resource.Check Exits Class Delete">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//button[@class='btn no-text btn-small deletion']</arg>
+</arguments>
+<msg timestamp="20131228 22:29:49.256" level="INFO">Current page contains element 'xpath=//button[@class='btn no-text btn-small deletion']'.</msg>
+<status status="PASS" endtime="20131228 22:29:49.256" starttime="20131228 22:29:48.238"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:29:49.256" starttime="20131228 22:29:48.237"></status>
+</kw>
+<kw type="kw" name="resource.Delete A Subject">
+<doc></doc>
+<arguments>
+<arg>20520</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//tr[@id=${idsubject}]/button[@class='btn no-text btn-small deletion']</arg>
+</arguments>
+<msg timestamp="20131228 22:29:49.258" level="INFO">Clicking element 'xpath=//tr[@id=20520]/button[@class='btn no-text btn-small deletion']'.</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20131228 22:29:51.550" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20131228 22:29:51.550" starttime="20131228 22:29:50.272"></status>
+</kw>
+<msg timestamp="20131228 22:29:51.551" level="FAIL">ValueError: Element locator 'xpath=//tr[@id=20520]/button[@class='btn no-text btn-small deletion']' did not match any elements.</msg>
+<status status="FAIL" endtime="20131228 22:29:51.551" starttime="20131228 22:29:49.258"></status>
+</kw>
+<status status="FAIL" endtime="20131228 22:29:51.551" starttime="20131228 22:29:49.257"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20131228 22:29:51.552" critical="yes" starttime="20131228 22:29:38.982">ValueError: Element locator 'xpath=//tr[@id=20520]/button[@class='btn no-text btn-small deletion']' did not match any elements.</status>
+</test>
+<test id="s1-t5" name="Add Valid Subject">
+<kw type="kw" name="resource.Go to Class page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${CLASS URL}</arg>
+</arguments>
+<msg timestamp="20131228 22:29:51.558" level="INFO">Opening url 'http://truongnha.com/school/viewClassDetail/1453'</msg>
+<status status="PASS" endtime="20131228 22:29:55.562" starttime="20131228 22:29:51.557"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:29:55.562" starttime="20131228 22:29:51.556"></status>
+</kw>
+<kw type="kw" name="resource.Go to Subject page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${SUBJECT}</arg>
+</arguments>
+<msg timestamp="20131228 22:29:55.566" level="INFO">Opening url 'http://truongnha.com/school/subjectPerClass/1453'</msg>
+<status status="PASS" endtime="20131228 22:29:59.872" starttime="20131228 22:29:55.565"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:29:59.872" starttime="20131228 22:29:55.564"></status>
+</kw>
+<kw type="kw" name="resource.Submit Sort">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>sort</arg>
+</arguments>
+<msg timestamp="20131228 22:29:59.875" level="INFO">Clicking button 'sort'.</msg>
+<status status="PASS" endtime="20131228 22:30:03.012" starttime="20131228 22:29:59.875"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:30:03.012" starttime="20131228 22:29:59.873"></status>
+</kw>
+<kw type="kw" name="resource.Display Advance">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=advanced</arg>
+</arguments>
+<msg timestamp="20131228 22:30:03.014" level="INFO">Clicking element 'id=advanced'.</msg>
+<status status="PASS" endtime="20131228 22:30:05.283" starttime="20131228 22:30:03.014"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:30:05.283" starttime="20131228 22:30:03.013"></status>
+</kw>
+<kw type="kw" name="resource.Insert Subject">
+<doc></doc>
+<arguments>
+<arg>Địa lí</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id_name</arg>
+<arg>${subject_name}</arg>
+</arguments>
+<msg timestamp="20131228 22:30:05.286" level="INFO">Typing text 'Địa lí' into text field 'id_name'</msg>
+<status status="PASS" endtime="20131228 22:30:08.507" starttime="20131228 22:30:05.286"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:30:08.507" starttime="20131228 22:30:05.285"></status>
+</kw>
+<kw type="kw" name="resource.Select TypeSubject">
+<doc></doc>
+<arguments>
+<arg>Địa lí</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Select From List">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>xpath=//select[@id="id_type"]</arg>
+<arg>${name_type}</arg>
+</arguments>
+<msg timestamp="20131228 22:30:08.511" level="INFO">Selecting option(s) 'Địa lí' from list 'xpath=//select[@id="id_type"]'.</msg>
+<status status="PASS" endtime="20131228 22:30:14.598" starttime="20131228 22:30:08.510"></status>
+</kw>
+<status status="PASS" endtime="20131228 22:30:14.598" starttime="20131228 22:30:08.509"></status>
+</kw>
+<kw type="kw" name="resource.Insert Teacher">
+<doc></doc>
+<arguments>
+<arg>Doãn Bảo Long</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>teacher_id</arg>
+<arg>${teacher}</arg>
+</arguments>
+<msg timestamp="20131228 22:30:14.603" level="INFO">Typing text 'Doãn Bảo Long' into text field 'teacher_id'</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20131228 22:30:16.984" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20131228 22:30:16.984" starttime="20131228 22:30:15.652"></status>
+</kw>
+<msg timestamp="20131228 22:30:16.992" level="FAIL">ElementNotVisibleException: Message: u'Element is not currently visible and so may not be interacted with' ; Stacktrace: 
+    at fxdriver.preconditions.visible (file:///c:/users/anhlum/appdata/local/temp/tmpq604vi/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command_processor.js:8210)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/anhlum/appdata/local/temp/tmpq604vi/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command_processor.js:10834)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/anhlum/appdata/local/temp/tmpq604vi/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command_processor.js:10851)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/anhlum/appdata/local/temp/tmpq604vi/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command_processor.js:10856)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/anhlum/appdata/local/temp/tmpq604vi/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command_processor.js:10798) </msg>
+<status status="FAIL" endtime="20131228 22:30:16.992" starttime="20131228 22:30:14.602"></status>
+</kw>
+<status status="FAIL" endtime="20131228 22:30:16.993" starttime="20131228 22:30:14.600"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20131228 22:30:16.994" critical="yes" starttime="20131228 22:29:51.555">ElementNotVisibleException: Message: u'Element is not currently visible and so may not be interacted with' ; Stacktrace: 
+    at fxdriver.preconditions.visible (file:///c:/users/anhlum/appdata/local/temp/tmpq604vi/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command_processor.js:8210)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/anhlum/appdata/local/temp/tmpq604vi/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command_processor.js:10834)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/anhlum/appdata/local/temp/tmpq604vi/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command_processor.js:10851)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/anhlum/appdata/local/temp/tmpq604vi/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command_processor.js:10856)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/anhlum/appdata/local/temp/tmpq604vi/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command_processor.js:10798) </status>
 </test>
 <doc>A test suite with a single test for Sort Subject . This test has a workflow that is created using keywords from resource file</doc>
 <metadata>
 </metadata>
-<status status="FAIL" endtime="20131227 11:59:25.719" starttime="20131227 11:58:23.574"></status>
+<status status="FAIL" endtime="20131228 22:30:16.999" starttime="20131228 22:28:32.398"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="1">Critical Tests</stat>
-<stat fail="1" pass="1">All Tests</stat>
+<stat fail="3" pass="2">Critical Tests</stat>
+<stat fail="3" pass="2">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" pass="1" id="s1" name="Sort Subject">Sort Subject</stat>
+<stat fail="3" pass="2" id="s1" name="Sort Subject">Sort Subject</stat>
 </suite>
 </statistics>
 <errors>
